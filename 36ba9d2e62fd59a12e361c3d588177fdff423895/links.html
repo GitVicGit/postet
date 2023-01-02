@@ -1,0 +1,274 @@
+<!-- link.html -->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Victor Guerin</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="hidden">
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+	<meta name="apple-mobile-web-app-title" content="Victor Guerin">
+	<meta name="apple-mobile-web-app-url" content="https://victorguerin.com/links" />
+	<meta name="application-name" content="Victor Guerin">
+	<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png?v=2021.03">
+	<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png?v=2021.03">
+	<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png?v=2021.03">
+	<link rel="manifest" href="./icons/site.webmanifest?v=2021.04">
+	<link rel="mask-icon" href="./icons/safari-pinned-tab.svg?v=2021.03" color="#212121">
+	<link rel="shortcut icon" href="./icons/favicon.ico?v=2021.03">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="./icons/browserconfig.xml?v=2021.03">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+<link rel="stylesheet" href="./css/art-gallery-icons.css">
+<style>
+	/* Font Inter Variable */
+	@font-face {
+		font-family: 'Inter';
+		font-weight: 100 900;
+		font-display: swap;
+		font-style: normal;
+		font-named-instance: 'Regular';
+		src: url("./fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+	}
+
+	@font-face {
+		font-family: 'Inter';
+		font-weight: 100 900;
+		font-display: swap;
+		font-style: italic;
+		font-named-instance: 'Italic';
+		src: url("./fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
+	}
+
+</style>
+<style>
+	html {
+		/* avoid background bounce */
+		height: 100%;
+		overflow: hidden;
+	}
+
+	body {
+		/* reset */
+		padding: 0;
+		margin: 5vw 5vw 0 5vw;
+		/* avoid background bounce */
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		overflow: auto;
+		color: #141516;
+		font-family: 'Inter', 'Helvetica', 'Arial', 'Open Sans', sans-serif;
+		font-size: 0.875em;
+		line-height: 1.2rem;
+		/* letter-spacing: 0.0625rem; */
+		background: #fff;
+		/* background: rgba(0, 0, 0, 0.75) url('assets/background-1440p.jpg') no-repeat center fixed; */
+		background-size: cover;
+		-webkit-font-smoothing: subpixel-antialiased;
+		/* -webkit-font-smoothing: antialiased; */
+		-moz-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: optimizelegibility;
+		font-kerning: normal;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	body::-webkit-scrollbar {
+		display: none;
+	}
+
+	h1,
+	.h1 {
+		font-size: 1.222rem;
+		line-height: 1.6111111rem;
+		margin-top: 1.6111111rem;
+		margin-bottom: 0;
+		font-weight: 800;
+		letter-spacing: -0.03rem;
+	}
+
+	h2,
+	.h2 {
+		font-weight: 800;
+		letter-spacing: 0.025rem;
+		font-size: 1rem;
+		line-height: 1.6111111em;
+		margin-top: 1.6111111em;
+		margin-bottom: 0;
+	}
+
+	a {
+		font-weight: 600;
+		/* color: #092c79; */
+		color: #484848;
+		text-decoration: none;
+		transition: ease-in-out 0.3s;
+	}
+
+	a:hover {
+		color: #092c79;
+		/* color: #0047ab; */
+		transition: 0.3s;
+	}
+
+	.link {
+		font-weight: 500;
+		color: #092c79;
+		/* color: #484848; */
+		text-decoration: none;
+		transition: ease-in-out 0.3s;
+	}
+
+	.link:hover {
+		/* color: #092c79; */
+		color: #0047ab;
+		transition: 0.3s;
+	}
+
+	/* TYPOGRAPHY TWEAKS */
+	.nowrap {
+		white-space: nowrap;
+	}
+
+	.no-bottom-margin {
+		margin-bottom: 0;
+	}
+
+	.no-top-margin {
+		margin-top: 0;
+	}
+
+	.half-bottom-margin {
+		margin-bottom: 0.722rem;
+	}
+
+	.half-top-margin {
+		margin-top: 0.722rem;
+	}
+
+	.no-margins {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.medium {
+		font-weight: 500;
+	}
+
+	.semi-bold {
+		font-weight: 600;
+	}
+
+	.bold {
+		font-weight: 700;
+	}
+
+	.extra-bold {
+		font-weight: 800;
+	}
+
+	.uppercase {
+		text-transform: uppercase;
+	}
+
+	.underscore {
+		text-decoration: underline;
+	}
+
+	hr,
+	.hr {
+		border: 1px solid;
+		margin: -2px 0;
+	}
+
+	/* STRUCTURE */
+	.logotype {
+		display: block;
+		height: auto;
+		max-width: 100%;
+	}
+
+	.intro {
+		text-align: center;
+		padding: 0 1.25em 1.25em 1.25em;
+		font-weight: 500;
+	}
+
+	.icons-row {
+		padding-bottom: 0.25rem;
+	}
+
+	.icons {
+		width: auto;
+		font-size: 1.2555555rem;
+		border: none;
+		display: inline-block;
+		padding: 0.5rem;
+		color: #141516;
+	}
+
+	.icons-sml {
+		padding: 0;
+		margin: 0;
+	}
+
+	.footer {
+		/* position: absolute;
+		bottom: 0; */
+		width: 90vw;
+		text-align: left;
+		margin-top: 1.5em;
+		font-weight: 600;
+		font-size: 0.75rem;
+		color: #111;
+	}
+
+
+
+</style>
+
+<body>
+
+	<a href="https://victorguerin.com" target="_blank">
+		<img src="./svg/victorguerin.svg" alt="Victor Guerin Logotype" class="logotype">
+	</a>
+	<div class="intro">
+		<!-- <p><a class="link" target="_blank" style="font-weight:600" href="https://www.instagram.com/victorguerin.fr/"> @victorguerin.fr</a></p> -->
+		<div class="icons-row">
+			<a class="icons" href="https://victorguerin.com"><i class="icon-desktop"></i></a><a class="icons" target="_blank" href="https://www.instagram.com/victorguerin.fr/"><i class="icon-instagram"></i></a> <a class="icons" target="_blank" href="mailto:victorguerin.fr+site@protonmail.com"><i class="icon-mail"></i></a><a class="icons" target="_blank" href="https://victorguerin.com"><i class="icon-location"></i></a>
+		</div>
+		<p>Victor Guerin Artist and engineer. row 248 links</p>
+	</div>
+
+	<hr>
+
+	<h1 class="no-bottom-margin">Victor Guerin</h1>
+	<div class="half-bottom-margin">
+		<!-- <a style="display:inline-block;" class="icons" href="https://g.page/espace230" target="_blank"><i class="icon-location"></i></a> -->
+		<!-- <span style="display:inline-block">Paris Jersey Edinburgh</span><span>  &ensp;H3B&nbsp;1A2</span> -->
+		<p><a style="color:inherit" href="https://g.page/victorguerin" target="_blank">Paris Jersey Edinburgh&ensp;H3B&nbsp;1A2</a></p>
+
+		<!-- <a href="https://g.page/victorguerin" target="_blank"><i class="icon icons-sml icon-location hx-inline"></i></a>
+		<a href="https://instagram.com/victorguerin.fr" target="_blank"><i class="icon icons-sml icon-instagram hx-inline"></i></a><span>&ensp;|&ensp;</span> -->
+		<a class="nodeco semi-bold link" target="_blank" href="https://victorguerin.com">victorguerin.com</a><span>&ensp;·&ensp;</span><a class="nodeco semi-bold link" target="_blank" href="mailto:victorguerin.fr+site@protonmail.com">victorguerin+site@protonmail.com</a>
+		<!-- <a class="link" href="https://victorguerin.com" target="_blank">victorguerin.com</a> -->
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<br />
+		<hr />
+		<p style="margin-top:0.25em">Copyright &copy; 2023<span style="float: right;">Victor Guerin</span>
+	</div>
+	<br />
+</body>
+
+</html>
