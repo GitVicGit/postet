@@ -795,8 +795,10 @@ i.icon {
 	content: "\e906";
 }
 
-.icon-facebook-f:before {
-	content: "\e906";
-}
+.icon-facebook-f:before { content: "\e906";} 
+
+.icon-linkedin:before { content: "\f0e1"; } 
+
+.icon-mail:before { content: "\e802"; }
 
 /* EOF */
